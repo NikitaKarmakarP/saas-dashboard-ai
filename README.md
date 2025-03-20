@@ -1,12 +1,14 @@
-# AI-Powered Blog Generator 🧠✍️
+# saas-dashboard-ai 🧠✍️
 
-This is a full-stack AI-powered blog generator using React (Vite) for the frontend and Express for the backend.
+A modern SaaS dashboard built with React and Tailwind CSS. Includes a responsive layout, dark mode toggle, stats cards, and a sales overview chart.
 
 ## Features
-- User inputs a topic and tone.
-- Generates a complete blog post using OpenAI's GPT model.
-- Fully responsive and styled with Tailwind CSS.
-- Loading spinners, error handling, and modern UI components.
+- 🌙 Light/Dark mode toggle
+- 📊 Dashboard statistics cards
+- 📈 Sales overview line chart (Recharts)
+- 📁 Modular and reusable React components
+- 💨 Tailwind CSS for utility-first styling
+- ⚡ Smooth hover and transition effects
 
 ---
 
@@ -14,24 +16,41 @@ This is a full-stack AI-powered blog generator using React (Vite) for the fronte
 
 ```
 my-ai-blog-generator/
-├── backend/
-│   ├── index.js
-│   ├── package.json
-│   └── .env
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── BlogForm.jsx
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   │   └── index.html
-│   ├── package.json
-│   ├── postcss.config.js
-│   ├── tailwind.config.js
-│   └── vite.config.js
-├── README.md
-└── .gitignore
+/saas-dashboard-ai
+|-- /backend
+|   |-- /controllers
+|   |   |-- blogController.js
+|   |-- /models
+|   |   |-- Blog.js
+|   |-- /routes
+|   |   |-- blogRoutes.js
+|   |-- server.js
+|   |-- .env
+|-- /frontend
+|   |-- /src
+|   |   |-- /components
+|   |   |   |-- Dashboard.js
+|   |   |   |-- Navbar.js
+|   |   |   |-- Sidebar.js
+|   |   |   |-- BlogGenerator.js
+|   |   |   |-- BlogHistory.js
+|   |   |-- /pages
+|   |   |   |-- Home.js
+|   |   |   |-- Login.js
+|   |   |   |-- Register.js
+|   |   |-- /hooks
+|   |   |   |-- useAuth.js
+|   |   |-- /utils
+|   |   |   |-- api.js
+|   |   |-- App.js
+|   |   |-- index.js
+|   |   |-- index.css
+|   |-- .env
+|   |-- tailwind.config.js
+|   |-- postcss.config.js
+|-- package.json (mono-repo)
+|-- README.md
+|-- .gitignore           
 ```
 
 ## ⚙️ Backend Setup (Express)
@@ -120,4 +139,5 @@ MIT
 - **Frontend:** Vercel, Netlify
 - **Backend:** Render, Railway, Heroku
 
+Made with ❤️ by Nikita Karmakar
 Happy coding! 🎉
