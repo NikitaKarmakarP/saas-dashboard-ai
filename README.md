@@ -122,6 +122,8 @@ Response example:
 - Express.js
 - OpenAI GPT API
 
+---
+
 ## 🌟 Future Improvements
 - Add authentication (e.g., Google login).
 - Save generated blogs to a database.
@@ -139,5 +141,9 @@ MIT
 - **Frontend:** Vercel, Netlify
 - **Backend:** Render, Railway, Heroku
 
+---
+
 Made with ❤️ by Nikita Karmakar
+
+
 Happy coding! 🎉
